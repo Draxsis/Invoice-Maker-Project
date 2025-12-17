@@ -1,5 +1,4 @@
 {
-  "name": "Persian WebDev Invoice Generator",
-  "description": "A professional invoice generator tailored for Iranian web developers using Gemini AI to draft service descriptions. Features RTL layout, Vazirmatn typography, and PDF-ready output.",
+  "name": "Invoice Generator",
   "requestFramePermissions": []
 }

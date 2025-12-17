@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { InvoiceData, LineItem, ColorTheme, IconStyle } from '../types';
 import { Plus, Trash2, Sparkles, ChevronDown, ChevronUp, User, FileText, ShoppingCart, Info, Palette, Check } from 'lucide-react';
-import { AIAssistant } from './AIAssistant';
 
 interface InvoiceFormProps {
   data: InvoiceData;
@@ -405,13 +404,6 @@ export const InvoiceForm: React.FC<InvoiceFormProps> = ({ data, onChange }) => {
           </div>
         )}
       </div>
-
-      {showAI.isOpen && (
-        <AIAssistant
-          onClose={() => setShowAI({ ...showAI, isOpen: false })}
-          onSuccess={handleAISuccess}
-        />
-      )}
     </div>
   );
 };
